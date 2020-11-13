@@ -22,8 +22,6 @@ public function index(User $user)
 
         //return response()->json(['data' => $users], 200);
        return $this->showAll($users);
-
-        //
     }
 
     public function store(Request $request)
@@ -51,7 +49,7 @@ public function index(User $user)
     }
 
     
-    public function show(User $user)/////////
+    public function show(User $user)
     {
 
        //$user = User::findOrFail($id);
@@ -104,10 +102,7 @@ public function index(User $user)
     //return response()->json(['data' => $user], 200);
     return $this ->showOne($user);
 }
-
-    /**
-     *tp\Response
-     */
+    
     public function destroy(User $user)
     {
         //$user = User::findOrFail($id);
